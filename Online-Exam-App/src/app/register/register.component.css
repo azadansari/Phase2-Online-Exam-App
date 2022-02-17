@@ -1,0 +1,14 @@
+.card{
+  margin: 5% auto;
+  padding: 25px;
+}
+.card .form-control{
+  box-shadow: none;
+  outline: none;
+}
+
+@media(max-width:768px){
+  .card{
+    padding: 0;
+  }
+}
