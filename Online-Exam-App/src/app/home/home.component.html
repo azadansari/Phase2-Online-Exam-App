@@ -1,7 +1,19 @@
-
-<div class="container mt-5 mb-5 text-center">
+<div class="container mt-5 mb-5">
   <div class="containtBox">
-    <h2>Are You ready for Test? <br> All the Best!</h2>
-    <button routerLink="onlinetest" class="btn btn-primary col-3">Start Test</button>
+    <h1 class="display-5 fw-bold text-center">Welcome to Quiz App</h1>
+    <p class="fs-4 mb-5 text-center">This quiz will contains total 10 Questions. Each Questions have 1 mark.</p>
+
+    <div class="col-md-4 mt-5">
+      <h4>Rules:</h4>
+      <ol>
+        <li>Correct Question gives you 1 mark for each.</li>
+        <li>Incorrect Question gives -1mark for each.</li>
+        <li>You will have 30 sec to answer each Question</li>
+        <li>Refreshing the page will restart the Quiz</li>
+      </ol>
+      <label class="fs-7 mb-2">Enter Your Name: </label>
+      <input #name class="form-control" type="text" placeholder="Enter Name">
+    </div>
+    <button routerLink="onlinetest" class="btn btn-primary" (click)="startQuiz()">Start Test</button>
   </div>
 </div>
