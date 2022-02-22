@@ -8,7 +8,9 @@ import { OnlinetestComponent } from './onlinetest/onlinetest.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'', component:LoginComponent},
+  {path:'*', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'aboutus', component:AboutusComponent},

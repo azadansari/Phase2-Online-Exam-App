@@ -11,6 +11,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { OnlinetestComponent } from './onlinetest/onlinetest.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ChangeBgDirective } from './change-bg.directive';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { FooterComponent } from './footer/footer.component';
     AboutusComponent,
     ContactusComponent,
     OnlinetestComponent,
-    FooterComponent
+    FooterComponent,
+    ChangeBgDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
