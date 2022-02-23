@@ -43,11 +43,11 @@
         </ol>
       </div>
       <div class="d-flex justify-content-between p-3">
-        <button [disabled]="currentQuestion==0" class="btn" (click)="previousQuestion()">
+        <!-- <button [disabled]="currentQuestion==0" class="btn" (click)="previousQuestion()">
           <i class="far fa-chevron-left text-primary"></i> Previous
-        </button>
+        </button> -->
         <button class="btn" (click)="resetQuiz()"><i class="far fa-sync-alt text-primary"></i></button>
-        <button class="btn" (click)="nextQuestion()">Next <i class="far fa-chevron-right text-primary"></i></button>
+        <button class="btn border" (click)="nextQuestion()">Next <i class="far fa-chevron-right text-primary"></i></button>
       </div>
     </ng-container>
 
@@ -65,22 +65,3 @@
     </ng-container>
   </div>
 </div>
-
-<!-- <div class="container mt-5 mb-5">
-  <div id="question-container" class="hide">
-    <div id="question">
-      <h3>1. <span>Question</span></h3>
-    </div>
-    <div id="answer-buttons" class="btn-grid">
-
-      <div class="row mt-3">
-        <div class="col-md-12 mb-3">
-          <span><input type="radio"> Answer 2</span> &nbsp;
-          <span><input type="radio"> Answer 2</span> &nbsp;
-          <span><input type="radio"> Answer 2</span> &nbsp;
-          <span><input type="radio"> Answer 2</span> &nbsp;
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->

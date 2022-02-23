@@ -11,9 +11,15 @@
         <li>You will have 30 sec to answer each Question</li>
         <li>Refreshing the page will restart the Quiz</li>
       </ol>
-      <label class="fs-7 mb-2">Enter Your Name: </label>
-      <input #name class="form-control" type="text" placeholder="Enter Name">
+      <form>
+        <label class="fs-7 mb-2">Enter Your Name: </label>
+        <input #name class="form-control" type="text" placeholder="Enter Name"
+        onkeyup="if(this.value.length > 0) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;">
+        <button routerLink="onlinetest" class="btn btn-primary" (click)="startQuiz()"
+        value="Click to begin!" id="start_button" disabled >Start Test
+        </button>
+      </form>
+
     </div>
-    <button routerLink="onlinetest" class="btn btn-primary" (click)="startQuiz()">Start Test</button>
   </div>
 </div>
